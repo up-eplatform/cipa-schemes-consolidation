@@ -157,7 +157,7 @@ Set Accept to application/json in the request header.
 {
     "Order Id": "TRANSACTION ID",
     "Amount": "TRANSACTION AMOUNT",
-    "Description": DESCRIPTION OF TRANSACTION,
+    "Description": "DESCRIPTION OF TRANSACTION",
     "Currency": "TRANSACTION CURRENCY",
     "Status": "TRANSACTION STATUS",
     "PAN": "CUSTOMER PHONE NUMBER",
@@ -193,14 +193,16 @@ After the first successful transaction and a Status query has returned the Sessi
 **Step 1:** Create a json representation of the data elements below
 ```json
 {
-"SecretKey" = "2BC80A5EB5BB6A64A772F9806A7E9A0B16702043AB475DC4",
-"Scheme" = "visa", 
-"Amount" = 500,
-"Fee" = 0,
-"SessionId" = "DE4B683DBCA6D3BD81041D148BCEDF46",
-"Currency" = "566",
-"CustomerEmail" = "text@text.com", CustomerName = "Unified Payments", Description = "EKEDC",
-"ReturnUrl" = "http://localhost:7501/transaction/pgpostback"
+"SecretKey": "2BC80A5EB5BB6A64A772F9806A7E9A0B16702043AB475DC4",
+"Scheme": "visa", 
+"Amount": 500,
+"Fee": 0,
+"SessionId": "DE4B683DBCA6D3BD81041D148BCEDF46",
+"Currency": "566",
+"CustomerEmail": "text@text.com", 
+"CustomerName": "Unified Payments", 
+"Description": "EKEDC",
+"ReturnUrl": "http://localhost:7501/transaction/pgpostback"
 };
 ```
 **Step 2: ** Encrypt the json data above using AES Algorithm specified earlier. 
@@ -213,7 +215,7 @@ https://test.payarena.com/Home/RecurringTransaction/MERCHANTID?payload=ENCRYPTED
 
 ## TRANSACTION PROCESS FLOW 
 
-(./img/process.jpeg)
+![TRANSACTION PROCESS FLOW](/img/process.png)
 
 ## Transaction Process Flow (Explained)
 * Customer checks out from WebShop and enters payment details
