@@ -241,4 +241,4 @@ customer with the details received from UP MPI.
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@eplatform(eplatform@up-ng.com) - feel free to contact us for clerifications.
