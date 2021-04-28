@@ -99,7 +99,7 @@ For recurring payments, the frequency should contain the number of times the pay
 
 **Step 5:** Using the AES algorithm, sample code provided below, encrypt the json data in Step 4 above using the first 16 characters of the string obtained in Step 3. See an example below:
 
-## C# 
+ **C#** 
 ```
 public static string Encrypt(byte[] dataToEncrypt, byte[] key, byte[] iv)
 {
@@ -184,7 +184,8 @@ The status is the status of the transaction, this could be either of the followi
 
  
 
-## RECURRING TRANSACTION STATUS QUERY
+**RECURRING TRANSACTION STATUS QUERY**
+
 For recurring payment, a SessionId field is returned when a getstatus request is made (this is valid only for an approved transaction) . 
 The SessionId is a compulsory field when subsequent payments are to be made.
 
